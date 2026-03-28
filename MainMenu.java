@@ -1,0 +1,26 @@
+public static void main(String[] args) {
+    int choice;
+    System.out.println("--- QUAN LY CONG VIEC NHOM ---");
+
+    do {
+        System.out.println("\n1. Them moi");
+        System.out.println("2. Xem danh sach");
+        System.out.println("3. Xoa du lieu");
+        System.out.println("4. Chinh sua du lieu");
+        System.out.println("5. Thoat");
+        System.out.print("Chon: ");
+        choice = scanner.nextInt();
+        scanner.nextLine(); 
+
+        if (choice == 1) {
+            addTask(); 
+        } else if (choice == 2) {
+            showTasks(); 
+        } else if (choice == 3) {
+            deleteTask(); 
+        } else if (choice == 4) {
+            editTask();
+        }
+    } while (choice != 5);
+}
+//fsdfdsfssdfd
